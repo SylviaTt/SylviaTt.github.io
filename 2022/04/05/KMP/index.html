@@ -26,7 +26,7 @@
 <meta property="og:description" content="在主串中寻找模式串kmp：主串指针i一直执行i ++，不回溯；模式串指针j移动某些子串与模式串能部分匹配的时候有优势  主串和模式串的匹配：   如果j等于0或者s.ch[i]与T.ch[i]匹配则i ++，j ++ 如果不匹配，则j &#x3D; next[j]12345678910111213141516int Index_KMP(sstring S,sstring T)&amp;#123;int i">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-04-04T17:01:07.000Z">
-<meta property="article:modified_time" content="2022-04-05T11:34:51.223Z">
+<meta property="article:modified_time" content="2022-04-05T13:45:49.951Z">
 <meta property="article:author" content="Sylvia">
 <meta property="article:tag" content="数据结构">
 <meta name="twitter:card" content="summary">
@@ -331,8 +331,7 @@
 </li>
 <li><p>KMP算法的时间复杂度：<br> next数组：O(m);&#x2F;&#x2F;i ++<br> KMP匹配：O(n); &#x2F;&#x2F;i ++<br> 时间复杂度：O(m + n)</p>
 </li>
-<li><p>KMP算法的next数组优化：nextval数组<br> ** 当j和next[j]相等时，j &#x3D; next[next[j]]<br>|  序号j    |  1  |  2   | 3  |  4  |  5  |<br>|  模式串   |  a  |  a   | a  |  a  |  b  |<br>|  next[j]  |  0  |  1  | 2  |  3  |  4  |<br>|  nextval[j] |  0  |  0  | 0  |  0  | 4  |</p>
-<p> |  模式串  | a | a | a | a | b |<br> |  next[j]  | 0 | 1 | 2 | 3 | 4 |<br> |  nextval[j]  | 0 | 0 | 0 | 0 | 4 |</p>
+<li><p>KMP算法的next数组优化：nextval数组<br> <strong>当j和next[j]相等时，j &#x3D; next[next[j]]</strong><br> 序号j       1    2    3    4   5<br> 模式串      a    a    a    a   b<br> next[j]     0    1    2    3   4<br> nextval[j]   0    0   0    0   4  </p>
 <p> nextval数组求法：</p>
  <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//先算出next数组</span></span><br><span class="line"><span class="comment">//另nextval[1] = 0</span></span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> j = <span class="number">2</span>;j &lt;= T.lenth;j ++)&#123;</span><br><span class="line">    <span class="keyword">if</span>(T.ch[next[j]] == T.ch[j])</span><br><span class="line">        nextval[j] = nextval[next[j]];</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        nextval[j] = next[j];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 </ol>

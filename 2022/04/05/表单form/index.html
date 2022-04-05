@@ -17,23 +17,30 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>位运算，lowbit | Sylvia&#39;s 浮空岛</title>
-  <meta name="description" content="二进制n的第k位数 n &gt;&gt; k &amp; 1 1.先把第k位移动到最后一位 n &gt;&gt; k 2.看个位是几 x &amp; 1 lowbit（x） 返回x的最后一位1 eg.lowbit（1010） &#x3D; 10；lowbit（101000） &#x3D; 1000； 内核： x &amp; -x ： x &amp; （ ~取反 x + 1） eg.x &#x3D;">
+  <title>表单form | Sylvia&#39;s 浮空岛</title>
+  <meta name="description" content="form：文档区域，此区域包含交互控件，用于向 Web 服务器提交信息。 123&lt;body&gt;    &lt;form action&#x3D;&quot;&quot;&gt;&lt;&#x2F;form&gt;&lt;&#x2F;body&gt; action:可以传入地址，也可删除 当传入网址的时候一点submit的button就会跳转到该网址 1234567&lt;body&gt;    &lt;form&amp;gt">
 <meta property="og:type" content="article">
-<meta property="og:title" content="位运算，lowbit">
-<meta property="og:url" content="https://sylviatt.github.io/2022/04/05/%E4%BD%8D%E8%BF%90%E7%AE%97%EF%BC%8Clowbit/index.html">
+<meta property="og:title" content="表单form">
+<meta property="og:url" content="https://sylviatt.github.io/2022/04/05/%E8%A1%A8%E5%8D%95form/index.html">
 <meta property="og:site_name" content="Sylvia&#39;s 浮空岛">
-<meta property="og:description" content="二进制n的第k位数 n &gt;&gt; k &amp; 1 1.先把第k位移动到最后一位 n &gt;&gt; k 2.看个位是几 x &amp; 1 lowbit（x） 返回x的最后一位1 eg.lowbit（1010） &#x3D; 10；lowbit（101000） &#x3D; 1000； 内核： x &amp; -x ： x &amp; （ ~取反 x + 1） eg.x &#x3D;">
+<meta property="og:description" content="form：文档区域，此区域包含交互控件，用于向 Web 服务器提交信息。 123&lt;body&gt;    &lt;form action&#x3D;&quot;&quot;&gt;&lt;&#x2F;form&gt;&lt;&#x2F;body&gt; action:可以传入地址，也可删除 当传入网址的时候一点submit的button就会跳转到该网址 1234567&lt;body&gt;    &lt;form&amp;gt">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://r9t20g349.hn-bkt.clouddn.com/blog/12.png">
-<meta property="article:published_time" content="2022-04-05T15:15:41.000Z">
-<meta property="article:modified_time" content="2022-04-05T15:20:30.282Z">
+<meta property="og:image" content="http://r9t20g349.hn-bkt.clouddn.com/blog/action.png">
+<meta property="og:image" content="http://r9t20g349.hn-bkt.clouddn.com/blog/%E7%BD%91%E5%9D%80.png">
+<meta property="og:image" content="http://r9t20g349.hn-bkt.clouddn.com/blog/input.png">
+<meta property="og:image" content="http://r9t20g349.hn-bkt.clouddn.com/blog/5.png">
+<meta property="og:image" content="http://r9t20g349.hn-bkt.clouddn.com/blog/6.png">
+<meta property="og:image" content="http://r9t20g349.hn-bkt.clouddn.com/blog/7.png">
+<meta property="og:image" content="http://r9t20g349.hn-bkt.clouddn.com/blog/lang.png">
+<meta property="og:image" content="http://r9t20g349.hn-bkt.clouddn.com/blog/lang2.png">
+<meta property="article:published_time" content="2022-04-05T15:50:03.000Z">
+<meta property="article:modified_time" content="2022-04-05T16:07:30.598Z">
 <meta property="article:author" content="Sylvia">
-<meta property="article:tag" content="基础算法">
+<meta property="article:tag" content="html">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://r9t20g349.hn-bkt.clouddn.com/blog/12.png">
+<meta name="twitter:image" content="http://r9t20g349.hn-bkt.clouddn.com/blog/action.png">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://sylviatt.github.io/2022/04/05/%E4%BD%8D%E8%BF%90%E7%AE%97%EF%BC%8Clowbit/index.html">
+  <link rel="canonical" href="https://sylviatt.github.io/2022/04/05/%E8%A1%A8%E5%8D%95form/index.html">
   
     <link rel="alternate" href="/atom.xml" title="Sylvia&#39;s 浮空岛" type="application/atom+xml">
   
@@ -307,14 +314,14 @@
   
 <main class="main" role="main">
   <div class="content">
-  <article id="post-位运算，lowbit" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-表单form" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
         
   
     <h1 class="article-title" itemprop="name">
-      位运算，lowbit
+      表单form
     </h1>
   
 
@@ -322,39 +329,48 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/2022/04/05/%E4%BD%8D%E8%BF%90%E7%AE%97%EF%BC%8Clowbit/" class="article-date">
-	  <time datetime="2022-04-05T15:15:41.000Z" itemprop="datePublished">2022-04-05</time>
+	<a href="/2022/04/05/%E8%A1%A8%E5%8D%95form/" class="article-date">
+	  <time datetime="2022-04-05T15:50:03.000Z" itemprop="datePublished">2022-04-05</time>
 	</a>
 </span>
         
         
   <span class="article-tag">
     <i class="icon icon-tags"></i>
-	<a class="article-tag-link-link" href="/tags/%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95/" rel="tag">基础算法</a>
+	<a class="article-tag-link-link" href="/tags/html/" rel="tag">html</a>
   </span>
 
 
         
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2022/04/05/%E4%BD%8D%E8%BF%90%E7%AE%97%EF%BC%8Clowbit/#comments" class="article-comment-link">评论</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2022/04/05/%E8%A1%A8%E5%8D%95form/#comments" class="article-comment-link">评论</a></span>
         
       </div>
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <p>二进制n的第k位数<br><img src="http://r9t20g349.hn-bkt.clouddn.com/blog/12.png" alt="位运算"></p>
-<p><strong>n &gt;&gt; k &amp; 1</strong></p>
-<p>1.先把第k位移动到最后一位 n &gt;&gt; k</p>
-<p>2.看个位是几 x &amp; 1</p>
-<p><strong>lowbit（x）</strong></p>
-<p>返回x的最后一位1</p>
-<p>eg.lowbit（1010） &#x3D; 10；lowbit（101000） &#x3D; 1000；</p>
-<p>内核：</p>
-<p>x &amp; -x ： x &amp; （ ~取反 x + 1）</p>
-<p>eg.x &#x3D; 10000….1000；</p>
-<p>~x &#x3D; 01111….01111;</p>
-<p>~x + 1 &#x3D; ……10000；（不会再往前进位了）</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">const</span> <span class="type">int</span> N = <span class="number">100010</span>;</span><br><span class="line"><span class="type">int</span> a[N];</span><br><span class="line"><span class="type">int</span> n;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">lowbit</span><span class="params">(<span class="type">int</span> x)</span> </span>&#123;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> x &amp; - x;</span><br><span class="line"> </span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	cin &gt;&gt; n;</span><br><span class="line">	<span class="type">int</span> res = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">		cin &gt;&gt; a[i];</span><br><span class="line">		<span class="keyword">while</span> (a[i]) &#123;</span><br><span class="line">			a[i] -= <span class="built_in">lowbit</span>(a[i]);</span><br><span class="line">			res ++;</span><br><span class="line">		&#125;</span><br><span class="line">		cout &lt;&lt; res &lt;&lt; <span class="string">&#x27; &#x27;</span>;</span><br><span class="line">		res = <span class="number">0</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <p>form：文档区域，此区域包含交互控件，用于向 Web 服务器提交信息。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">&quot;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>action:可以传入地址，也可删除<br><img src="http://r9t20g349.hn-bkt.clouddn.com/blog/action.png" alt="action"></p>
+<p>当传入网址的时候一点submit的button就会跳转到该网址<br><img src="http://r9t20g349.hn-bkt.clouddn.com/blog/%E7%BD%91%E5%9D%80.png" alt="网址"></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">form</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;username&quot;</span>&gt;</span>用户名<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">name</span>=<span class="string">&quot;iddd&quot;</span> <span class="attr">id</span>=<span class="string">&quot;username&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">&quot;submit&quot;</span>&gt;</span>提交<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><strong><input>标签</strong><br>HTML <input>用来填写内容，常见类型有：</p>
+<p><input type="text">：创建基础的单行文本框。</p>
+<p><input type="number">：用于让用户输入一个数字。其包括内置验证以拒绝非数字输入。浏览器可能会选择提供步进箭头，让用户可以使用鼠标增加和减少输入的值，或者只需用指尖敲击即可。</p>
+<p><input type="email">：带有 “email” (电子邮箱) 类型标记的输入框元素 (<input>) 能够让用户输入或编辑一个电子邮箱地址，此外，如果指定了multiple属性，用户还可以输入多个电子邮箱地址。在表单提交前，输入框会自动验证输入值是否是一个或多个合法的电子邮箱地址 (非空值且符合电子邮箱地址格式). CSS 伪标签 :valid 和 :invalid 能够在校验后自动应用。</p>
+<p><input type="password">：<input> 元素 里有一种叫做 “password” 的值，给我们一个方法让用户更加安全的输入密码。这个元素是作为一行纯文本编辑器控件呈现的，其中文本被遮蔽以致于无法读取，通常通过用诸如星号（“*”）或点（“•”）等符号替换每个字符来实现。这个符号会根据用户的浏览器和操作系统来具体显示哪个。</p>
+<p><input type="radio">：<input> 的 radio 类型元素默认渲染为小型圆圈图表，填充即为激活，类似于之前描述额复选框（checkbox）类型。单选按钮允许你选择单一的值来提交表单。</p>
+<p>name相同选一个，value是值，id是绑定lable</p>
+<p><img src="http://r9t20g349.hn-bkt.clouddn.com/blog/input.png" alt="input"></p>
+<p>常用属性有：</p>
+<p>name: 名称<br>id: 唯一ID<br>maxlength：最大长度<br>minlength：最小长度<br>required：是否必填<br>placeholder：当表单控件为空时，控件中显示的内容<br><img src="http://r9t20g349.hn-bkt.clouddn.com/blog/5.png" alt="5"><br><img src="http://r9t20g349.hn-bkt.clouddn.com/blog/6.png" alt="6"></p>
+<p><strong>textarea：评论区，可拉长评论框</strong><br><img src="http://r9t20g349.hn-bkt.clouddn.com/blog/7.png" alt="7"></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;resunme&quot;</span>&gt;</span>用户名<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">textarea</span> <span class="attr">name</span>=<span class="string">&quot;resume&quot;</span> <span class="attr">id</span>=<span class="string">&quot;resume&quot;</span> <span class="attr">cols</span>=<span class="string">&quot;30&quot;</span> <span class="attr">rows</span>=<span class="string">&quot;10&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">textarea</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><strong>select：选项</strong><br>option：选择(selected是默认；无value是空）</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;lang&quot;</span>&gt;</span>lang<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">name</span>=<span class="string">&quot;lang&quot;</span> <span class="attr">id</span>=<span class="string">&quot;lang&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">option</span> <span class="attr">selected</span> <span class="attr">value</span>=<span class="string">&quot;cpp&quot;</span>&gt;</span>cpp<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;cpp&quot;</span>&gt;</span>java<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;cpp&quot;</span>&gt;</span>python<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="http://r9t20g349.hn-bkt.clouddn.com/blog/lang.png" alt="lang"><br>没有selected的情况下默认选第一个，value&#x3D;‘’可以有名字：请选择<br><img src="http://r9t20g349.hn-bkt.clouddn.com/blog/lang2.png" alt="lang2"></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;&quot;</span>&gt;</span>请选择<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
       
     </div>
     <div class="article-footer">
@@ -363,7 +379,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="https://sylviatt.github.io/2022/04/05/%E4%BD%8D%E8%BF%90%E7%AE%97%EF%BC%8Clowbit/" title="位运算，lowbit" target="_blank" rel="external">https://sylviatt.github.io/2022/04/05/位运算，lowbit/</a>
+      <a href="https://sylviatt.github.io/2022/04/05/%E8%A1%A8%E5%8D%95form/" title="表单form" target="_blank" rel="external">https://sylviatt.github.io/2022/04/05/表单form/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -410,12 +426,12 @@
   <ul class="pager pull-left">
     
     <li class="prev">
-      <a href="/2022/04/05/%E5%8F%8C%E6%8C%87%E9%92%88%E7%AE%97%E6%B3%95/" title="双指针算法"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+      <a href="/2022/04/06/%E5%88%97%E8%A1%A8/" title="列表"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
     </li>
     
     
     <li class="next">
-      <a href="/2022/04/05/KMP/" title="KMP"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+      <a href="/2022/04/05/%E8%B6%85%E9%93%BE%E6%8E%A5/" title="超链接"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
     </li>
     
     

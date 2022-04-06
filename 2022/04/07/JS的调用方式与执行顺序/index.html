@@ -17,16 +17,21 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>标签: c++基础 | Sylvia&#39;s 浮空岛</title>
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Sylvia&#39;s 浮空岛">
-<meta property="og:url" content="https://sylviatt.github.io/tags/c-%E5%9F%BA%E7%A1%80/index.html">
+  <title>JS的调用方式与执行顺序 | Sylvia&#39;s 浮空岛</title>
+  <meta name="description" content="使用方式HTML页面中的任意位置加上&lt;script type&#x3D;&quot;module&quot;&gt;&lt;&#x2F;script&gt;标签即可。 执行顺序 从上到下渲染，没有main主函数，遇见script就执行 事件驱动执行；  常见使用方式有以下几种：  直接在&lt;script type&#x3D;&quot;module&quot;&gt;&lt;&#x2F;script&gt;标签内写JS代码。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JS的调用方式与执行顺序">
+<meta property="og:url" content="https://sylviatt.github.io/2022/04/07/JS%E7%9A%84%E8%B0%83%E7%94%A8%E6%96%B9%E5%BC%8F%E4%B8%8E%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F/index.html">
 <meta property="og:site_name" content="Sylvia&#39;s 浮空岛">
+<meta property="og:description" content="使用方式HTML页面中的任意位置加上&lt;script type&#x3D;&quot;module&quot;&gt;&lt;&#x2F;script&gt;标签即可。 执行顺序 从上到下渲染，没有main主函数，遇见script就执行 事件驱动执行；  常见使用方式有以下几种：  直接在&lt;script type&#x3D;&quot;module&quot;&gt;&lt;&#x2F;script&gt;标签内写JS代码。">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-04-06T17:04:47.000Z">
+<meta property="article:modified_time" content="2022-04-06T17:39:52.368Z">
 <meta property="article:author" content="Sylvia">
+<meta property="article:tag" content="JS">
 <meta name="twitter:card" content="summary">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://sylviatt.github.io/tags/c-%E5%9F%BA%E7%A1%80/index.html">
+  <link rel="canonical" href="https://sylviatt.github.io/2022/04/07/JS%E7%9A%84%E8%B0%83%E7%94%A8%E6%96%B9%E5%BC%8F%E4%B8%8E%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F/index.html">
   
     <link rel="alternate" href="/atom.xml" title="Sylvia&#39;s 浮空岛" type="application/atom+xml">
   
@@ -297,62 +302,194 @@
 </aside>
 
   
-  <main class="main" role="main">
-  <article class="content article article-tags post-type-list" itemscope="">
-    <header class="article-header">
-      <h1 itemprop="name" class="hidden-xs">标签: c++基础</h1>
-      <p class="text-muted hidden-xs">共 1 篇文章</p>
-      <nav role="navigation" id="nav-main" class="okayNav">
-        <ul>
-          <li><a href="/tags">All</a></li>
-          
-          <li><a href="/tags/c-基础/">c++基础</a></li>
-          
-          <li><a href="/tags/JS/">JS</a></li>
-          
-          <li><a href="/tags/数据结构/">数据结构</a></li>
-          
-          <li><a href="/tags/使用基础/">使用基础</a></li>
-          
-          <li><a href="/tags/基础算法/">基础算法</a></li>
-          
-          <li><a href="/tags/html/">html</a></li>
-          
-        </ul>
-      </nav>
-    </header>
-    <!-- /header -->
-    <div class="article-body">
-      <div class="row">
-        
-<div class="col-md-6">
+  
+<main class="main" role="main">
+  <div class="content">
+  <article id="post-JS的调用方式与执行顺序" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
-<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="panel-body">
-     <div class="article-meta">
-       <time datetime="2022-04-05T15:26:37.000Z" itemprop="datePublished">2022-04-05</time>
-     </div>
-     <h3 class="article-title" itemprop="name">
-       <a class="article-link" href="/2022/04/05/C-%E6%A0%BC%E5%BC%8F%E5%8C%96%E8%AF%BB%E5%85%A5/">C++格式化读入</a>
-     </h3>
-   </div>
-   
-   <div class="panel-footer">
-     
-      <a href="/tags/c-%E5%9F%BA%E7%A1%80/" class="label label-default mb">c++基础</a>
-     
-     
-   </div>
-   
-</article>
+    <div class="article-header">
+      
+        
+  
+    <h1 class="article-title" itemprop="name">
+      JS的调用方式与执行顺序
+    </h1>
+  
+
+      
+      <div class="article-meta">
+        <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2022/04/07/JS%E7%9A%84%E8%B0%83%E7%94%A8%E6%96%B9%E5%BC%8F%E4%B8%8E%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F/" class="article-date">
+	  <time datetime="2022-04-06T17:04:47.000Z" itemprop="datePublished">2022-04-07</time>
+	</a>
+</span>
+        
+        
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link-link" href="/tags/JS/" rel="tag">JS</a>
+  </span>
 
 
-</div>
+        
 
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2022/04/07/JS%E7%9A%84%E8%B0%83%E7%94%A8%E6%96%B9%E5%BC%8F%E4%B8%8E%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F/#comments" class="article-comment-link">评论</a></span>
+        
       </div>
     </div>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      
+        <h3 id="使用方式"><a href="#使用方式" class="headerlink" title="使用方式"></a>使用方式</h3><p>HTML页面中的任意位置加上<code>&lt;script type=&quot;module&quot;&gt;&lt;/script&gt;</code>标签即可。</p>
+<h3 id="执行顺序"><a href="#执行顺序" class="headerlink" title="执行顺序"></a>执行顺序</h3><ol>
+<li>从上到下渲染，没有main主函数，遇见script就执行</li>
+<li>事件驱动执行；</li>
+</ol>
+<p>常见使用方式有以下几种：</p>
+<ol>
+<li>直接在<code>&lt;script type=&quot;module&quot;&gt;&lt;/script&gt;</code>标签内写JS代码。</li>
+<li>直接引入文件：<code>&lt;script type=&quot;module&quot; src=&quot;/static/js/index.js&quot;&gt;&lt;/script&gt;</code>。<br> src就是链接</li>
+<li>将所需的代码通过<code>import</code>关键字引入到当前作用域</li>
+</ol>
+<p>例如：<br><em>&#x2F;static&#x2F;js&#x2F;index.js文件</em>中的内容为：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> name = <span class="string">&quot;zt&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">print</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;Hello World!&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> &#123;</span><br><span class="line">    name,</span><br><span class="line">    print</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><code>&lt;script type=&quot;module&quot;&gt;&lt;/script&gt;</code>中的内容为：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=<span class="string">&quot;module&quot;</span>&gt;</span><br><span class="line">    <span class="keyword">import</span> &#123; name, print &#125; <span class="keyword">from</span> <span class="string">&quot;/static/js/index.js&quot;</span>;</span><br><span class="line"></span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(name);</span><br><span class="line">    <span class="title function_">print</span>();</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>文件中的export才会在script里面被引用</strong><br>有了<code>type=&quot;module&quot;</code>可以严格限制变量的作用域：仅在本<code>script</code>里作用。</p>
+<h3 id="HTML-CSS-JavaScript三者之间的关系"><a href="#HTML-CSS-JavaScript三者之间的关系" class="headerlink" title="HTML, CSS, JavaScript三者之间的关系"></a>HTML, CSS, JavaScript三者之间的关系</h3><ol>
+<li>CSS控制HTML</li>
+<li>JavaScript控制HTML与CSS</li>
+</ol>
+<p><em>不要在html里面调用JS函数</em><br><code>&lt;button onclick=&#39;printf()&#39;&gt;&lt;/button&gt;</code>:可以在html的标签button里面操控JS函数printf，但是为了维护，应该在JS里面给button指定事件</p>
+
+      
+    </div>
+    <div class="article-footer">
+      <blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接：</strong>
+      <a href="https://sylviatt.github.io/2022/04/07/JS%E7%9A%84%E8%B0%83%E7%94%A8%E6%96%B9%E5%BC%8F%E4%B8%8E%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F/" title="JS的调用方式与执行顺序" target="_blank" rel="external">https://sylviatt.github.io/2022/04/07/JS的调用方式与执行顺序/</a>
+    </li>
+    
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong> 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN协议</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+</blockquote>
+
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/SylviaTt" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="http://q1.qlogo.cn/g?b=qq&amp;nk=3441647548&amp;s=640" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/SylviaTt" target="_blank"><span class="text-dark">Sylvia_Tt</span><small class="ml-1x">普通女大学牲</small></a></h3>
+        <div>记录底层大学牲躺平 耶斯！</div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+
+    </div>
   </article>
-   
+  
+    
+  <section id="comments">
+  	
+      <div id="vcomments"></div>
+    
+  </section>
+
+
+  
+</div>
+
+  <nav class="bar bar-footer clearfix" data-stick-bottom>
+  <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    <li class="prev">
+      <a href="/2022/04/07/%E5%8F%98%E9%87%8F%E4%B8%8E%E8%BF%90%E7%AE%97%E7%AC%A6/" title="变量与运算符"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+    </li>
+    
+    
+    <li class="next">
+      <a href="/2022/04/06/%E6%A0%88/" title="栈"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+    
+  </ul>
+  
+  
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-fancy btn-donate pop-onhover bg-gradient-warning" data-toggle="modal" data-target="#donateModal"><span>赏</span></button>
+  <!-- <div class="wave-icon wave-icon-danger btn-donate" data-toggle="modal" data-target="#donateModal">
+    <div class="wave-circle"><span class="icon"><i class="icon icon-bill"></i></span></div>
+  </div> -->
+  
+  
+  <div class="bar-right">
+    
+    <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter" data-mobile-sites="weibo,qq,qzone"></div>
+    
+  </div>
+  </div>
+</nav>
+  
+<!-- Modal -->
+<div class="modal modal-center modal-small modal-xs-full fade" id="donateModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content donate">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <div class="modal-body">
+        <div class="donate-box">
+          <div class="donate-head">
+            <p>感谢您的支持，我会继续努力的!</p>
+          </div>
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade active in" id="alipay">
+              <div class="donate-payimg">
+                <img src="/images/donate/alipayimg.png" alt="扫码支持" title="扫一扫" />
+              </div>
+              <p class="text-muted mv">扫码打赏，你说多少就多少</p>
+              <p class="text-grey">打开支付宝扫一扫，即可进行扫码打赏哦</p>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="wechatpay">
+              <div class="donate-payimg">
+                <img src="/images/donate/wechatpayimg.png" alt="扫码支持" title="扫一扫" />
+              </div>
+              <p class="text-muted mv">扫码打赏，你说多少就多少</p>
+              <p class="text-grey">打开微信扫一扫，即可进行扫码打赏哦</p>
+            </div>
+          </div>
+          <div class="donate-footer">
+            <ul class="nav nav-tabs nav-justified" role="tablist">
+              <li role="presentation" class="active">
+                <a href="#alipay" id="alipay-tab" role="tab" data-toggle="tab" aria-controls="alipay" aria-expanded="true"><i class="icon icon-alipay"></i> 支付宝</a>
+              </li>
+              <li role="presentation" class="">
+                <a href="#wechatpay" role="tab" id="wechatpay-tab" data-toggle="tab" aria-controls="wechatpay" aria-expanded="false"><i class="icon icon-wepay"></i> 微信支付</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 </main>
 
   <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
@@ -407,6 +544,37 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 
 
 
+
+   
+
+
+
+
+   
+    
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/valine"></script>
+  <script type="text/javascript">
+  var GUEST = ['nick', 'mail', 'link'];
+  var meta = 'nick,mail,link';
+  meta = meta.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#vcomments',
+    verify: false,
+    notify: false,
+    appId: '',
+    appKey: '',
+    placeholder: 'Just go go',
+    avatar: 'mm',
+    meta: meta,
+    pageSize: '10' || 10,
+    visitor: false
+  });
+  </script>
+
+     
 
 
 

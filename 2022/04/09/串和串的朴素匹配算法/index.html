@@ -25,13 +25,15 @@
 <meta property="og:site_name" content="Sylvia&#39;s 浮空岛">
 <meta property="og:description" content="串是由字符组成的有限序列S &#x3D; “Helloworld!” S：串名字符个数n: 串的长度n &#x3D; 0时，空串子串:串中连续序列组成的子序列主串:包含子串的串字符在子串中的位置：字符在串中的序号（串的下标从1开始）子串在子串中的位置：子串的第一个字符在主串中的位置空串，空格串区别：””,”    “（空格也是字符） 串是特殊的线性表，区别是线性表的对象为字符计算机通过字符的二进制">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://sylviatt.github.io/">
+<meta property="og:image" content="https://s2.loli.net/2022/04/09/AqiyZBFGIHarT9S.png">
+<meta property="og:image" content="https://s2.loli.net/2022/04/09/DaOM9PQvHbNwpR1.png">
+<meta property="og:image" content="https://s2.loli.net/2022/04/09/7LGWfr3vJty41bm.png">
 <meta property="article:published_time" content="2022-04-09T01:24:45.000Z">
-<meta property="article:modified_time" content="2022-04-09T06:34:11.250Z">
+<meta property="article:modified_time" content="2022-04-09T06:46:38.610Z">
 <meta property="article:author" content="Sylvia">
 <meta property="article:tag" content="数据结构">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://sylviatt.github.io/">
+<meta name="twitter:image" content="https://s2.loli.net/2022/04/09/AqiyZBFGIHarT9S.png">
   <!-- Canonical links -->
   <link rel="canonical" href="https://sylviatt.github.io/2022/04/09/%E4%B8%B2%E5%92%8C%E4%B8%B2%E7%9A%84%E6%9C%B4%E7%B4%A0%E5%8C%B9%E9%85%8D%E7%AE%97%E6%B3%95/index.html">
   
@@ -351,12 +353,12 @@
 <ol>
 <li>静态数组实现：定长存储<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> MAXLEN 255</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span>&#123;</span><br><span class="line">    <span class="type">char</span> ch[MAXLEN];</span><br><span class="line">    <span class="type">int</span> lenth;</span><br><span class="line">&#125;SString;</span><br></pre></td></tr></table></figure></li>
 <li>动态数组（堆分配）<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span>&#123;</span><br><span class="line">    <span class="type">char</span> *ch; <span class="comment">//ch指向串的基地址</span></span><br><span class="line">    <span class="type">int</span> lenth; <span class="comment">//串的长度</span></span><br><span class="line">&#125;SString;</span><br><span class="line">S.ch = (<span class="type">char</span>*) <span class="built_in">malloc</span>(MAXLEN * <span class="built_in">sizeof</span>(<span class="type">char</span>)) <span class="comment">//malloc的函数需要手动free</span></span><br><span class="line">S.lenth = <span class="number">0</span>;</span><br></pre></td></tr></table></figure>
-!(堆的内存)[]<br>存储采用ch[0]不用，字符从ch[1]开始，最后增加一个int存储lenth<br>!(串的顺序存储)[]</li>
+<img src="https://s2.loli.net/2022/04/09/AqiyZBFGIHarT9S.png" alt="堆的内存.png"><br>存储采用ch[0]不用，字符从ch[1]开始，最后增加一个int存储lenth<br><img src="https://s2.loli.net/2022/04/09/DaOM9PQvHbNwpR1.png" alt="串的顺序存储.png"></li>
 </ol>
 <ul>
 <li>串的链式存储<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span> <span class="title class_">StringNode</span>&#123;</span><br><span class="line">    <span class="type">char</span> ch; <span class="comment">//1B</span></span><br><span class="line">    <span class="keyword">struct</span> <span class="title class_">StringNode</span> * Next; <span class="comment">//4B</span></span><br><span class="line">&#125;StringNode,*String;</span><br></pre></td></tr></table></figure>
 缺点：存储密度低（1B -&gt; 4B)<br>改进：一个节点多个字符<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span> <span class="title class_">StringNode</span>&#123;</span><br><span class="line">    <span class="type">char</span> ch[<span class="number">4</span>]; </span><br><span class="line">    <span class="keyword">struct</span> <span class="title class_">StringNode</span> * Next; <span class="comment">//4B</span></span><br><span class="line">&#125;StringNode,*String;</span><br></pre></td></tr></table></figure>
-如果最后一个节点填不满，则用特殊字符填充<br><img src="/" alt="存储"></li>
+如果最后一个节点填不满，则用特殊字符填充<br><img src="https://s2.loli.net/2022/04/09/7LGWfr3vJty41bm.png" alt="存储.png"></li>
 </ul>
 <ol>
 <li><p>SubString:求子串，用sub返回串S的第pos个字符起长度为len的子串</p>

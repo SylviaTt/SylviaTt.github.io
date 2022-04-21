@@ -17,21 +17,24 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>变量与运算符 | Sylvia&#39;s 浮空岛</title>
-  <meta name="description" content="let和const let用来定义变量；变量可以多次赋值 const用来定义常量；常量只能复制一次，否则会报错  12345678910111213&lt;body&gt;    &lt;script type&#x3D;&quot;module&quot;&gt;        let a;        let x &#x3D; 3,name &#x3D; &amp;#x27;zt&amp;#x27;;              let">
+  <title>Tire树 | Sylvia&#39;s 浮空岛</title>
+  <meta name="description" content="Tire：高效地存储和查找字符串集合的数据结构存储把a-z -&gt; 0-25  p &#x3D; 0; 遍历字符串 没有下一个字符的路径：创造一个新路径 有下一个字符的路径，让p走向下一行 p &#x3D; son[p][u];123456789101112void insert(char str[])&amp;#123;    int p &#x3D; 0;     for(int i &#x3D; 0; str[i]">
 <meta property="og:type" content="article">
-<meta property="og:title" content="变量与运算符">
-<meta property="og:url" content="https://sylviatt.github.io/2022/04/07/%E5%8F%98%E9%87%8F%E4%B8%8E%E8%BF%90%E7%AE%97%E7%AC%A6/index.html">
+<meta property="og:title" content="Tire树">
+<meta property="og:url" content="https://sylviatt.github.io/2022/04/21/Tire%E6%A0%91/index.html">
 <meta property="og:site_name" content="Sylvia&#39;s 浮空岛">
-<meta property="og:description" content="let和const let用来定义变量；变量可以多次赋值 const用来定义常量；常量只能复制一次，否则会报错  12345678910111213&lt;body&gt;    &lt;script type&#x3D;&quot;module&quot;&gt;        let a;        let x &#x3D; 3,name &#x3D; &amp;#x27;zt&amp;#x27;;              let">
+<meta property="og:description" content="Tire：高效地存储和查找字符串集合的数据结构存储把a-z -&gt; 0-25  p &#x3D; 0; 遍历字符串 没有下一个字符的路径：创造一个新路径 有下一个字符的路径，让p走向下一行 p &#x3D; son[p][u];123456789101112void insert(char str[])&amp;#123;    int p &#x3D; 0;     for(int i &#x3D; 0; str[i]">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-04-06T17:25:30.000Z">
-<meta property="article:modified_time" content="2022-04-08T16:35:26.301Z">
+<meta property="og:image" content="https://s2.loli.net/2022/04/21/3Zca6FETkqYsXxj.png">
+<meta property="og:image" content="https://s2.loli.net/2022/04/21/7MBDxdTtCerZq9c.png">
+<meta property="article:published_time" content="2022-04-21T07:03:49.000Z">
+<meta property="article:modified_time" content="2022-04-21T08:30:33.849Z">
 <meta property="article:author" content="Sylvia">
-<meta property="article:tag" content="JS">
+<meta property="article:tag" content="数据结构">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2022/04/21/3Zca6FETkqYsXxj.png">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://sylviatt.github.io/2022/04/07/%E5%8F%98%E9%87%8F%E4%B8%8E%E8%BF%90%E7%AE%97%E7%AC%A6/index.html">
+  <link rel="canonical" href="https://sylviatt.github.io/2022/04/21/Tire%E6%A0%91/index.html">
   
     <link rel="alternate" href="/atom.xml" title="Sylvia&#39;s 浮空岛" type="application/atom+xml">
   
@@ -305,14 +308,14 @@
   
 <main class="main" role="main">
   <div class="content">
-  <article id="post-变量与运算符" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-Tire树" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
         
   
     <h1 class="article-title" itemprop="name">
-      变量与运算符
+      Tire树
     </h1>
   
 
@@ -320,39 +323,43 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/2022/04/07/%E5%8F%98%E9%87%8F%E4%B8%8E%E8%BF%90%E7%AE%97%E7%AC%A6/" class="article-date">
-	  <time datetime="2022-04-06T17:25:30.000Z" itemprop="datePublished">2022-04-07</time>
+	<a href="/2022/04/21/Tire%E6%A0%91/" class="article-date">
+	  <time datetime="2022-04-21T07:03:49.000Z" itemprop="datePublished">2022-04-21</time>
 	</a>
 </span>
         
         
   <span class="article-tag">
     <i class="icon icon-tags"></i>
-	<a class="article-tag-link-link" href="/tags/JS/" rel="tag">JS</a>
+	<a class="article-tag-link-link" href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" rel="tag">数据结构</a>
   </span>
 
 
         
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2022/04/07/%E5%8F%98%E9%87%8F%E4%B8%8E%E8%BF%90%E7%AE%97%E7%AC%A6/#comments" class="article-comment-link">评论</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2022/04/21/Tire%E6%A0%91/#comments" class="article-comment-link">评论</a></span>
         
       </div>
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <h3 id="let和const"><a href="#let和const" class="headerlink" title="let和const"></a><code>let</code>和<code>const</code></h3><ul>
-<li><code>let</code>用来定义变量；<br>变量可以多次赋值</li>
-<li><code>const</code>用来定义常量；<br>常量只能复制一次，否则会报错</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">    <span class="language-xml"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;module&quot;</span>&gt;</span><span class="language-javascript"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        <span class="keyword">let</span> a;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        <span class="keyword">let</span> x = <span class="number">3</span>,name = <span class="string">&#x27;zt&#x27;</span>;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      </span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        <span class="keyword">let</span> d = &#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">            <span class="attr">name</span>: <span class="string">&quot;yxc&quot;</span>,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">            <span class="attr">age</span>: <span class="number">18</span>,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        &#125;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        <span class="keyword">const</span> y = <span class="number">4</span>;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
-<p><strong>JS不需要声明变量类型</strong></p>
-<h3 id="变量类型"><a href="#变量类型" class="headerlink" title="变量类型"></a>变量类型</h3><p><code>console.log(typeof s)</code>输出s的变量类型</p>
-<p><code>number</code>：数值变量，例如1, 2.5(int,float)<br><code>string</code>：字符串，例如”zt”, ‘sylvia’，<strong>单引号与双引号均可</strong>。字符串中的每个字符为只读类型。<br>c++里面字符串（数组）是char可以改变的，但JS里面的字符只读（int）。<br>可以通过substr函数进行改变：<br>eg.把syivia改成sylvia</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=<span class="string">&quot;module&quot;</span>&gt;</span><br><span class="line">    <span class="keyword">let</span> s1 = <span class="string">&quot;syivia&quot;</span>;</span><br><span class="line">    <span class="keyword">let</span> s3 = s1.<span class="title function_">substr</span>(<span class="number">0</span>, <span class="number">2</span>) + <span class="string">&quot;l&quot;</span> + s1.<span class="title function_">substr</span>(<span class="number">3</span>);</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(s3)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-<p><code>boolean</code>：布尔值，例如true, false<br><code>object</code>：对象，类似于C++中的指针，例如[1, 2, 3]，{name: “zt”, age: 18}，null</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> d = &#123;</span><br><span class="line">    <span class="attr">name</span>:<span class="string">&quot;zt&quot;</span>,</span><br><span class="line">    <span class="attr">age</span>:<span class="number">18</span>,</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">//改变值</span></span><br><span class="line">d[<span class="string">&quot;name&quot;</span>] = <span class="string">&quot;abc&quot;</span>;</span><br><span class="line"><span class="comment">//调用字典：一定要引号</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(d[<span class="string">&#x27;name&#x27;</span>],d[<span class="string">&quot;age&quot;</span>]);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(d.<span class="property">name</span>,d.<span class="property">age</span>);</span><br><span class="line"><span class="comment">//字典的动态及加值</span></span><br><span class="line">d[<span class="string">&#x27;school&#x27;</span>] = <span class="string">&quot;AHU&quot;</span>;<span class="comment">//写法2：d.school = &quot;AHU&quot;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(d.<span class="property">name</span>,d.<span class="property">age</span>,d.<span class="property">school</span>);</span><br><span class="line"><span class="comment">//删除字典中的值</span></span><br><span class="line"><span class="keyword">delete</span> d.<span class="property">school</span>;</span><br><span class="line"><span class="comment">//直接输出一个字典</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(d);</span><br></pre></td></tr></table></figure>
-<p><code>undefined</code>：未定义的变量(let t; let t &#x3D; undefined)<br>类似于Python，JavaScript中的变量类型可以动态变化。</p>
-
+        <p>Tire：高效地存储和查找字符串集合的数据结构<br><strong>存储</strong><br><img src="https://s2.loli.net/2022/04/21/3Zca6FETkqYsXxj.png" alt="tire.png"><br>把a-z -&gt; 0-25</p>
+<ol>
+<li>p &#x3D; 0;</li>
+<li>遍历字符串</li>
+<li>没有下一个字符的路径：创造一个新路径</li>
+<li>有下一个字符的路径，让p走向下一行 p &#x3D; son[p][u];<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">insert</span><span class="params">(<span class="type">char</span> str[])</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> p = <span class="number">0</span>; </span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; str[i]; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="type">int</span> u = str[i] - <span class="string">&#x27;a&#x27;</span>; </span><br><span class="line">        <span class="keyword">if</span>(!son[p][u]) son[p][u] = ++idx;   </span><br><span class="line">        p = son[p][u]; </span><br><span class="line">    &#125;</span><br><span class="line">    cnt[p]++;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<p><strong>查找</strong></p>
+<ol>
+<li>p &#x3D; 0;</li>
+<li>遍历str</li>
+<li>如果没有路径，直接return 0退出</li>
+<li>p走向下一位p &#x3D; son[p][u]</li>
+<li>输出cnt[p];<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">query</span><span class="params">(<span class="type">char</span> str[])</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> p = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; str[i]; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="type">int</span> u = str[i] - <span class="string">&#x27;a&#x27;</span>;</span><br><span class="line">        <span class="keyword">if</span>(!son[p][u]) <span class="keyword">return</span> <span class="number">0</span>;  </span><br><span class="line">        p = son[p][u]; </span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> cnt[p];  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<p><strong>Tire字符串统计</strong><br><img src="https://s2.loli.net/2022/04/21/7MBDxdTtCerZq9c.png" alt="tire字符串统计.png"></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N = <span class="number">100010</span>;</span><br><span class="line"><span class="comment">//son[][]存储子节点的位置，分支最多26条；</span></span><br><span class="line"><span class="comment">//cnt[]存储以某节点结尾的字符串个数（同时也起标记作用）</span></span><br><span class="line"><span class="comment">//idx表示当前要插入的节点是第几个,每创建一个节点值+1</span></span><br><span class="line"><span class="type">int</span> son[N][<span class="number">26</span>], cnt[N], idx;</span><br><span class="line"><span class="type">char</span> str[N];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">insert</span><span class="params">(<span class="type">char</span> str[])</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> p = <span class="number">0</span>;  <span class="comment">//类似指针，指向当前节点</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; str[i]; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="type">int</span> u = str[i] - <span class="string">&#x27;a&#x27;</span>; <span class="comment">//将字母转化为数字</span></span><br><span class="line">        <span class="keyword">if</span>(!son[p][u]) son[p][u] = ++idx;   <span class="comment">//该节点不存在，创建节点</span></span><br><span class="line">        p = son[p][u];  <span class="comment">//使“p指针”指向下一个节点</span></span><br><span class="line">    &#125;</span><br><span class="line">    cnt[p]++;  <span class="comment">//结束时的标记，也是记录以此节点结束的字符串个数</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">query</span><span class="params">(<span class="type">char</span> str[])</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> p = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; str[i]; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="type">int</span> u = str[i] - <span class="string">&#x27;a&#x27;</span>;</span><br><span class="line">        <span class="keyword">if</span>(!son[p][u]) <span class="keyword">return</span> <span class="number">0</span>;  <span class="comment">//该节点不存在，即该字符串不存在</span></span><br><span class="line">        p = son[p][u]; </span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> cnt[p];  <span class="comment">//返回字符串出现的次数</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> n;</span><br><span class="line">    cin &gt;&gt; n;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span>(n--)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="type">char</span> op[<span class="number">2</span>];</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%s%s&quot;</span>, op, str);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(*op == <span class="string">&#x27;I&#x27;</span>) <span class="built_in">insert</span>(str);</span><br><span class="line">        <span class="keyword">else</span> <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, <span class="built_in">query</span>(str));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
     <div class="article-footer">
@@ -361,7 +368,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="https://sylviatt.github.io/2022/04/07/%E5%8F%98%E9%87%8F%E4%B8%8E%E8%BF%90%E7%AE%97%E7%AC%A6/" title="变量与运算符" target="_blank" rel="external">https://sylviatt.github.io/2022/04/07/变量与运算符/</a>
+      <a href="https://sylviatt.github.io/2022/04/21/Tire%E6%A0%91/" title="Tire树" target="_blank" rel="external">https://sylviatt.github.io/2022/04/21/Tire树/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -407,13 +414,9 @@
   
   <ul class="pager pull-left">
     
-    <li class="prev">
-      <a href="/2022/04/07/%E7%9F%A9%E9%98%B5%E7%9A%84%E5%8E%8B%E7%BC%A9%E5%AD%98%E5%82%A8/" title="矩阵的压缩存储"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
-    </li>
-    
     
     <li class="next">
-      <a href="/2022/04/07/JS%E7%9A%84%E8%B0%83%E7%94%A8%E6%96%B9%E5%BC%8F%E4%B8%8E%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F/" title="JS的调用方式与执行顺序"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+      <a href="/2022/04/21/%E9%93%BE%E8%A1%A8/" title="链表"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
     </li>
     
     

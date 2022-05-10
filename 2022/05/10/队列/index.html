@@ -17,25 +17,21 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>列表 | Sylvia&#39;s 浮空岛</title>
-  <meta name="description" content="ul与li unordered list 12345&lt;ul&gt;    &lt;li&gt;first&lt;&#x2F;li&gt;    &lt;li&gt;second&lt;&#x2F;li&gt;    &lt;li&gt;third&lt;&#x2F;li&gt;&lt;&#x2F;ul&gt; ol与liordered list 12345&lt;ol&gt;    &lt;li&gt;fee&lt;&#x2F;li&gt;">
+  <title>队列 | Sylvia&#39;s 浮空岛</title>
+  <meta name="description" content="队列的结构体：1. 队头指针；队尾指针；2.数据元素123456typedef struct&amp;#123;	int front;	int rear;    int data[Maxsize];&amp;#125;SqQueue;  队列初始化:初始化队头指针和队尾指针为0123void InitQueue(SqQueue Q)&amp;#123;    Q.rear &#x3D; Q.front &#x3D; 0;&amp;#125;  队列">
 <meta property="og:type" content="article">
-<meta property="og:title" content="列表">
-<meta property="og:url" content="https://sylviatt.github.io/2022/04/06/%E5%88%97%E8%A1%A8/index.html">
+<meta property="og:title" content="队列">
+<meta property="og:url" content="https://sylviatt.github.io/2022/05/10/%E9%98%9F%E5%88%97/index.html">
 <meta property="og:site_name" content="Sylvia&#39;s 浮空岛">
-<meta property="og:description" content="ul与li unordered list 12345&lt;ul&gt;    &lt;li&gt;first&lt;&#x2F;li&gt;    &lt;li&gt;second&lt;&#x2F;li&gt;    &lt;li&gt;third&lt;&#x2F;li&gt;&lt;&#x2F;ul&gt; ol与liordered list 12345&lt;ol&gt;    &lt;li&gt;fee&lt;&#x2F;li&gt;">
+<meta property="og:description" content="队列的结构体：1. 队头指针；队尾指针；2.数据元素123456typedef struct&amp;#123;	int front;	int rear;    int data[Maxsize];&amp;#125;SqQueue;  队列初始化:初始化队头指针和队尾指针为0123void InitQueue(SqQueue Q)&amp;#123;    Q.rear &#x3D; Q.front &#x3D; 0;&amp;#125;  队列">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://r9t20g349.hn-bkt.clouddn.com/blog/oi.png">
-<meta property="og:image" content="http://r9t20g349.hn-bkt.clouddn.com/blog/%E5%B5%8C%E5%A5%97.png">
-<meta property="og:image" content="http://r9t20g349.hn-bkt.clouddn.com/blog/dl.png">
-<meta property="article:published_time" content="2022-04-05T16:07:44.000Z">
-<meta property="article:modified_time" content="2022-04-05T16:11:43.748Z">
+<meta property="article:published_time" content="2022-05-10T02:38:51.000Z">
+<meta property="article:modified_time" content="2022-05-10T03:36:21.803Z">
 <meta property="article:author" content="Sylvia">
-<meta property="article:tag" content="html">
+<meta property="article:tag" content="数据结构">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://r9t20g349.hn-bkt.clouddn.com/blog/oi.png">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://sylviatt.github.io/2022/04/06/%E5%88%97%E8%A1%A8/index.html">
+  <link rel="canonical" href="https://sylviatt.github.io/2022/05/10/%E9%98%9F%E5%88%97/index.html">
   
     <link rel="alternate" href="/atom.xml" title="Sylvia&#39;s 浮空岛" type="application/atom+xml">
   
@@ -309,14 +305,14 @@
   
 <main class="main" role="main">
   <div class="content">
-  <article id="post-列表" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-队列" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
         
   
     <h1 class="article-title" itemprop="name">
-      列表
+      队列
     </h1>
   
 
@@ -324,37 +320,43 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/2022/04/06/%E5%88%97%E8%A1%A8/" class="article-date">
-	  <time datetime="2022-04-05T16:07:44.000Z" itemprop="datePublished">2022-04-06</time>
+	<a href="/2022/05/10/%E9%98%9F%E5%88%97/" class="article-date">
+	  <time datetime="2022-05-10T02:38:51.000Z" itemprop="datePublished">2022-05-10</time>
 	</a>
 </span>
         
         
   <span class="article-tag">
     <i class="icon icon-tags"></i>
-	<a class="article-tag-link-link" href="/tags/html/" rel="tag">html</a>
+	<a class="article-tag-link-link" href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" rel="tag">数据结构</a>
   </span>
 
 
         
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2022/04/06/%E5%88%97%E8%A1%A8/#comments" class="article-comment-link">评论</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2022/05/10/%E9%98%9F%E5%88%97/#comments" class="article-comment-link">评论</a></span>
         
       </div>
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <p><strong>ul与li</strong></p>
-<p>unordered list</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>first<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>second<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>third<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><strong>ol与li</strong><br><img src="http://r9t20g349.hn-bkt.clouddn.com/blog/oi.png" alt="ol"><br>ordered list</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ol</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>fee<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>see<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>bee<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ol</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>ol和ul相互嵌套<br><img src="http://r9t20g349.hn-bkt.clouddn.com/blog/%E5%B5%8C%E5%A5%97.png" alt="嵌套"></p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>first</span><br><span class="line">        <span class="tag">&lt;<span class="name">ol</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">li</span>&gt;</span>fee<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">li</span>&gt;</span>bee<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">li</span>&gt;</span>see<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">ol</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>second<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>third<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><strong>dl列表</strong><br>dt：title：不缩进</p>
-<p>dd：data：缩进一格<br><img src="http://r9t20g349.hn-bkt.clouddn.com/blog/dl.png" alt="dl"></p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dl</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dt</span>&gt;</span>Name<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dd</span>&gt;</span>Godzilla<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dt</span>&gt;</span>Born<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dd</span>&gt;</span>1952<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dt</span>&gt;</span>Birthplace<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dd</span>&gt;</span>Japan<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dt</span>&gt;</span>Color<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dd</span>&gt;</span>Green<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dd</span>&gt;</span>Orange<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dl</span>&gt;</span></span><br></pre></td></tr></table></figure>
+        <h3 id="队列的结构体：1-队头指针；队尾指针；2-数据元素"><a href="#队列的结构体：1-队头指针；队尾指针；2-数据元素" class="headerlink" title="队列的结构体：1. 队头指针；队尾指针；2.数据元素"></a>队列的结构体：1. 队头指针；队尾指针；2.数据元素</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">int</span> front;</span><br><span class="line">	<span class="type">int</span> rear;</span><br><span class="line">    <span class="type">int</span> data[Maxsize];</span><br><span class="line">&#125;SqQueue;</span><br></pre></td></tr></table></figure>
 
+<h3 id="队列初始化-初始化队头指针和队尾指针为0"><a href="#队列初始化-初始化队头指针和队尾指针为0" class="headerlink" title="队列初始化:初始化队头指针和队尾指针为0"></a>队列初始化:初始化队头指针和队尾指针为0</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">InitQueue</span><span class="params">(SqQueue Q)</span></span>&#123;</span><br><span class="line">    Q.rear = Q.front = <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="队列为空-队尾指针-x3D-队头指针"><a href="#队列为空-队尾指针-x3D-队头指针" class="headerlink" title="队列为空:队尾指针 &#x3D; 队头指针"></a>队列为空:队尾指针 &#x3D; 队头指针</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">IsEmpty</span><span class="params">(SqQueue Q)</span>  <span class="comment">//判断队列是否为空 </span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (Q.rear == Q.front)</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;队为空\n&quot;</span>);</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;队不为空\n&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="队列已满：-Q-rear-1-MAXSIZE-x3D-x3D-Q-front"><a href="#队列已满：-Q-rear-1-MAXSIZE-x3D-x3D-Q-front" class="headerlink" title="队列已满：(Q.rear + 1) % MAXSIZE &#x3D;&#x3D; Q.front"></a>队列已满：(Q.rear + 1) % MAXSIZE &#x3D;&#x3D; Q.front</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">bool</span> <span class="title">IsFull</span><span class="params">(SqQueue Q)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>((Q.rear + <span class="number">1</span>) % MAXSIZE == Q.front)</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    <span class="keyword">else</span> </span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="入队：1-判满；2-加入队尾-3-更新队尾指针：Q-rear-x3D-Q-rear-1-MAXSIZE"><a href="#入队：1-判满；2-加入队尾-3-更新队尾指针：Q-rear-x3D-Q-rear-1-MAXSIZE" class="headerlink" title="入队：1.判满；2.加入队尾;3.更新队尾指针：Q.rear &#x3D; (Q.rear + 1) % MAXSIZE"></a>入队：1.判满；2.加入队尾;3.更新队尾指针：Q.rear &#x3D; (Q.rear + 1) % MAXSIZE</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">EnQueue</span><span class="params">(SqQueue&amp; Q, <span class="type">int</span> n)</span>  <span class="comment">//实现入队操作</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="type">int</span> i = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; n; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span> ((Q.rear + <span class="number">1</span>) % MAXSIZE == Q.front)</span><br><span class="line">			<span class="built_in">printf</span>(<span class="string">&quot;队已满，无法入队\n&quot;</span>);</span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">		&#123;</span><br><span class="line">			cin &gt;&gt; Q.data[Q.rear];</span><br><span class="line">			Q.rear = (Q.rear + <span class="number">1</span>) % MAXSIZE;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;入队结束\n&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="出队：1-判空；2-用x返回队头元素；3-队头指针后移Q-front-x3D-Q-front-1-MAXSIZE；"><a href="#出队：1-判空；2-用x返回队头元素；3-队头指针后移Q-front-x3D-Q-front-1-MAXSIZE；" class="headerlink" title="出队：1.判空；2.用x返回队头元素；3.队头指针后移Q.front &#x3D; (Q.front + 1) % MAXSIZE；"></a>出队：1.判空；2.用x返回队头元素；3.队头指针后移Q.front &#x3D; (Q.front + 1) % MAXSIZE；</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">Dequeue</span><span class="params">(SqQueue&amp; Q,<span class="type">int</span> &amp;x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (Q.rear == Q.front)</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;队为空\n&quot;</span>);</span><br><span class="line">	<span class="keyword">else</span> </span><br><span class="line">	&#123;</span><br><span class="line">		x = Q.data[Q.front];</span><br><span class="line">		Q.front = (Q.front + <span class="number">1</span>) % MAXSIZE;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="打印队列：1-判空；2-遍历（更新front）"><a href="#打印队列：1-判空；2-遍历（更新front）" class="headerlink" title="打印队列：1.判空；2.遍历（更新front）"></a>打印队列：1.判空；2.遍历（更新front）</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">PrintQueue</span><span class="params">(SqQueue&amp; Q)</span>               <span class="comment">//实现出队操作</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (Q.rear == Q.front) <span class="built_in">printf</span>(<span class="string">&quot;队为空\n&quot;</span>);</span><br><span class="line">	<span class="keyword">else</span> </span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">while</span>(Q.front != Q.rear)&#123;</span><br><span class="line">            cout &lt;&lt; Q.data[Q.front];</span><br><span class="line">            Q.front = (Q.front + <span class="number">1</span>) % MAXSIZE;</span><br><span class="line">        &#125;</span><br><span class="line">        cout &lt;&lt; Q.data[Q.rear];</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="获取队首元素：输出-Q-data-Q-front"><a href="#获取队首元素：输出-Q-data-Q-front" class="headerlink" title="获取队首元素：输出 Q.data[Q.front]"></a>获取队首元素：输出 Q.data[Q.front]</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">GetHead</span><span class="params">(SqQueue Q)</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (Q.front != Q.rear)</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;队首元素为%d\n&quot;</span>, Q.data[Q.front]);</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;\n队为空，无队头元素\n&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="清空队列：队头队首指针置0"><a href="#清空队列：队头队首指针置0" class="headerlink" title="清空队列：队头队首指针置0"></a>清空队列：队头队首指针置0</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">CleanQueue</span><span class="params">(SqQueue Q)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	Q.front = Q.rear = <span class="number">0</span>;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;\n清空完成\n&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
     <div class="article-footer">
@@ -378,13 +380,9 @@
   
   <ul class="pager pull-left">
     
-    <li class="prev">
-      <a href="/2022/04/06/%E6%A0%88/" title="栈"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
-    </li>
-    
     
     <li class="next">
-      <a href="/2022/04/05/%E8%A1%A8%E5%8D%95form/" title="表单form"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+      <a href="/2022/05/08/%E6%90%9C%E7%B4%A2%EF%BC%88dfs%EF%BC%8Cbfs%EF%BC%89/" title="搜索（dfs，bfs）"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
     </li>
     
     
